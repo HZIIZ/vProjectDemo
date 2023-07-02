@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const request = axios.create({
-  baseURL: 'https://ttapi.research.itcast.cn/'
+  baseURL: 'http://toutiao-app.itheima.net/'
 })
 
 // 请求拦截器
