@@ -10,6 +10,10 @@ import postCssPxToRem from 'postcss-pxtorem'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    host: '192.168.31.204',
+    port: 8888
+  },
   plugins: [
     vue(),
     vueJsx(),
@@ -39,8 +43,10 @@ export default defineConfig({
           },
           propList: ['*'],
           // 需要转换的属性，这里选择全部都进行转换
-          selectorBlackList: ['norem']
+          selectorBlackList: ['norem'],
           // 过滤掉norem-开头的class，不进行rem转换
+          exclude: /github-markdown/
+          // 排查 github-markdown 文件，不转换rem
         })
       ]
     }

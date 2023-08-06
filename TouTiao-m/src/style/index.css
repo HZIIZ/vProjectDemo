@@ -76,4 +76,18 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #f5f7f9;
+}
+body .page-nav-bar {
+  background-color: #3296fa;
+}
+body .page-nav-bar .van-nav-bar__title,
+body .page-nav-bar .van-icon {
+  color: #fff;
+}
+.van-toast {
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+.van-toast__icon {
+  font-size: var(--van-toast-icon-size) !important;
 }
